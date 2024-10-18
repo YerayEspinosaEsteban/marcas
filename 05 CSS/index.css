@@ -1,0 +1,16 @@
+/* css son todo reglas de estilos */
+/* 1) nombre del elemento*/
+/* 2) apertura de llaves*/
+/* 3) propiedades a tutiplen*/
+#title1{
+    background-color: #a31717;
+    display: inline-block;
+}
+
+#title2{
+    background-color: #dfe2e1;
+}
+
+#title3{
+    background-color: #801c1c;
+}
