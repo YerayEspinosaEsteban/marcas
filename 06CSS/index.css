@@ -1,0 +1,44 @@
+/* css son todo reglas de estilos */
+/* 1) nombre del elemento*/
+/* 2) apertura de llaves*/
+/* 3) propiedades a tutiplen*/
+#title{
+    background-color: #a31717;
+    
+}
+
+#descrip{
+    background-color: #17976d;
+    display: inline-block;
+    border:10px #801c1c ridge;
+    border-color: #a31717;
+    padding-top: 20px;
+    padding: 5px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    display: block;
+}
+
+#card{
+    border:10px #801c1c ridge;
+    display: inline-block;
+    margin-left: 50%;
+    padding: 20px;
+
+}
+#juego{
+    width: 150px;
+    height: 150px;
+}
+.border{
+    border: 0.5px black solid;
+}
+#desc1{
+color: aqua;
+}
+#desc2{
+color: antiquewhite; 
+}
+#desc3{
+color: #176ba3;   
+}
