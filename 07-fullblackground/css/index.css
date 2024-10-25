@@ -1,0 +1,11 @@
+body{
+    background-image: url(/07-fullblackground/img/ventana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container {
+    background-color: aqua;
+}
+#container p {
+    background-color: rgb(40, 175, 51);
+}
