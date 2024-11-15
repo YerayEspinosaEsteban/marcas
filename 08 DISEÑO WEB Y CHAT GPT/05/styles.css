@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Estilos de la galería */
+  .galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Espaciado entre imágenes */
+  }
+  
+  .imagen {
+    flex: 1; /* Permite que las imágenes sean del mismo tamaño */
+    max-width: 30%; /* Limita el ancho de cada imagen */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .imagen img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+  }
+  
