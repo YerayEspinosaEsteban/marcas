@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Carousel */
+  .carousel {
+    position: relative;
+    width: 80%;
+    max-width: 1300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px; /* Marco elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: 300%; /* Tres imágenes: 300% del contenedor */
+    animation: slide 30s infinite; /* Animación completa de 30 segundos */
+  }
+  
+  .carousel-item {
+    width: 33.333%; /* Cada imagen ocupa un tercio del carrusel */
+    flex-shrink: 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Ajuste proporcional */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Efecto hover para imágenes */
+  .carousel-item img:hover {
+    transform: scale(1.1); /* Aumenta un 10% el tamaño */
+    cursor: pointer;
+  }
+  
+  /* Títulos de las imágenes */
+  .carousel-item h2 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  /* Animación personalizada */
+  @keyframes slide {
+    0%, 33.333% {
+      transform: translateX(0); /* Primera imagen fija durante 10 segundos */
+    }
+    43.333%, 76.666% {
+      transform: translateX(-33.333%); /* Segunda imagen fija durante 10 segundos */
+    }
+    86.666%, 100% {
+      transform: translateX(-66.666%); /* Tercera imagen fija durante 10 segundos */
+    }
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .carousel {
+      width: 100%;
+    }
+  
+    .carousel-item h2 {
+      font-size: 1rem;
+    }
+  
+    .carousel-item img:hover {
+      transform: none; /* Sin efecto hover en pantallas pequeñas */
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Features Section */
+  /* Sección de características */
+.features {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se adapten a varias filas */
+  justify-content: center;
+  gap: 20px; /* Espaciado entre los elementos */
+  padding: 40px 20px; /* Margen interno para toda la sección */
+  background-color: #f9f9f9; /* Fondo suave */
+}
+
+.feature-item {
+  flex: 1;
+  max-width: 30%; /* Ancho máximo en escritorio */
+  min-width: 250px; /* Ajuste para pantallas pequeñas */
+  text-align: center;
+  padding: 20px;
+  background-color: #e0e0e0; /* Fondo claro para cada tarjeta */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Evita que contenido sobresalga */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta al hacer hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+.feature-item img {
+  width: 80px; /* Tamaño fijo para las imágenes */
+  height: 80px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.feature-item h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .feature-item {
+    max-width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
+  }
+
+  .feature-item img {
+    height: 150px; /* Altura menor para dispositivos móviles */
+  }
+}
+/* Sección de anuncios */
+.ads {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaciado entre tarjetas */
+  margin: 20px;
+}
+
+.ad-item {
+  display: flex;
+  flex-direction: row; /* Coloca la imagen y el texto en una fila */
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 15px; /* Espacio entre imagen y texto */
+}
+
+.ad-item img {
+  width: 300px; /* Tamaño fijo para la imagen */
+  height: auto;
+  border-radius: 8px;
+}
+
+.ad-content {
+  flex: 1; /* El contenido ocupa el resto del espacio */
+}
+
+.ad-content h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ad-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .ad-item {
+    flex-direction: column; /* Cambia a formato vertical en pantallas pequeñas */
+    text-align: center;
+  }
+
+  .ad-item img {
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho para dispositivos pequeños */
+    margin-bottom: 15px;
+  }
+}
