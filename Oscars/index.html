@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styless.css'>
+    <script src='script.js' defer></script>
+</head>
+    <body>
+        <header class="header">
+            <h1>Oscars</h1>
+            <p></p>
+        </header>
+
+        <div class="slider">
+            <ul>
+              <li class="active">
+                <img src="https://www.rionegro.com.ar/wp-content/uploads/2025/01/PAD5hJyBdV5EXJxt3sLeFT-e1737641005165.jpg?w=920&h=517&crop=1" alt="Imagen 1" />
+              </li>
+              <li>
+                <img src="https://images4.alphacoders.com/135/thumb-1920-1355175.png" alt="Imagen 2" />
+              </li>
+              <li>
+                <img src="https://wallpapercave.com/wp/wp1855084.jpg" alt="Imagen 3" />
+              </li>
+              <li>
+                <img src="https://wallpapercave.com/wp/wp1855039.jpg" alt="Imagen 4" />
+              </li>
+              <li>
+                <img src="https://wallpapercave.com/wp/wp1855044.jpg" alt="Imagen 5" />
+              </li>
+            </ul>
+          </div>
+          
+
+        <div class="contenedor">
+
+           <p></p>
+           <div id="filtro">
+            <!-- Aquí se insertarán los botones de filtro -->
+        </div>
+           <p></p>
+
+            <input type="button" value="Ver Toda la Lista" id="cargarTodas" onclick="inicializar()">
+            <input type="button" value="Ordenar por Año" id="ordenar" onclick="ordenarPeliculas()">
+            <select id="pegi">
+                <option value="">Todos los PEGI</option>
+                <option value="3">PEGI 3</option>
+                <option value="7">PEGI 7</option>
+                <option value="12">PEGI 12</option>
+                <option value="16">PEGI 16</option>
+                <option value="18">PEGI 18</option>
+            </select>
+            
+
+            <select id="genero">
+                <!-- Aquí se insertarán los géneros -->
+            </select>
+            <p></p>
+
+          
+            
+            <h3>PELICULAS</h3>
+
+            
+
+            <div id="peliculas">
+                <!-- Aquí se insertarán las películas -->
+            </div>
+        </div>
+    </body>
+</html>

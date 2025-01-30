@@ -1,0 +1,168 @@
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #222222;
+    color: #dbb020;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+input {
+    background-color: #222222;
+    color: #dbb020;
+    padding: 6px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+
+input:hover {
+    color: #ff7b00;
+}
+
+
+h3 {
+    color: #dbb020;
+    padding: 10px;
+}
+
+h1 {
+    color: #dbb020;
+    padding: 10px;
+}
+
+select {
+    background-color: #222222;
+    color: #dbb020;
+    padding: 6px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+select option {
+    background-color: #222222;
+    color:#dbb020;
+    padding: 6px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+
+select:hover {
+    color: #ff7b00;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor #filtro {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contenedor .filtro-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #dbb020;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contenedor .filtro-button:hover {
+    color: #dbb020;
+    font-weight: bold;
+}
+
+#peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin: 10px;
+}
+
+.targeta {
+    background-color: transparent;}
+
+.targeta img {
+    width: 100%;
+    height: 70%;
+}
+
+.targeta p {
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.targeta p#titulo {
+    font-weight: bold;
+    color: #ffffff;
+}
+.targeta {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.targeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 2px solid #dbb020;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #000;
+    border-radius: 10px;
+  }
+  
+  .slider ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider li {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
